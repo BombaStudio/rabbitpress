@@ -32,9 +32,14 @@ logo = """
 """
 """
 to be continued
-http-adobe-coldfusion-apsa1301.nse  http-google-malware.nse                 http-svn-enum.nse
-http-affiliate-id.nse               http-grep.nse                           http-svn-info.nse
-http-apache-negotiation.nse         http-headers.nse                        http-title.nse
+http-adobe-coldfusion-apsa1301.nse
+http-google-malware.nse
+http-svn-enum.nse
+http-affiliate-id.nse
+http-grep.nse
+http-svn-info.nse
+http-apache-negotiation.nse         
+http-headers.nse                        http-title.nse
 http-apache-server-status.nse       http-hp-ilo-info.nse                    http-tplink-dir-traversal.nse
 http-aspnet-debug.nse               http-huawei-hg5xx-vuln.nse              http-trace.nse
 http-auth-finder.nse                http-icloud-findmyiphone.nse            http-traceroute.nse
@@ -91,6 +96,7 @@ help = """
 help_nmap = """
 \033[1;32;40m·─────────────────────────────────────────────────·
 \033[1;32;40m|\033[1;33;40m ftp             \033[1;32;40m└──>\033[1;33;40m scan target for ftp        \033[1;32;40m|
+\033[1;32;40m|\033[1;33;40m ftp             \033[1;32;40m└──>\033[1;33;40m scan target for http        \033[1;32;40m|
 \033[1;32;40m|\033[1;33;40m help            \033[1;32;40m└──>\033[1;33;40m help                       \033[1;32;40m|
 \033[1;32;40m|\033[1;33;40m back            \033[1;32;40m└──>\033[1;33;40m back main menu             \033[1;32;40m|
 \033[1;32;40m·─────────────────────────────────────────────────·
@@ -194,6 +200,8 @@ def nmap_scan(rpr,target):
 				system("""nmap --script ftp-vuln-cve2010-4221.nse -p 21 """+target)
 		if k == "help":
 			print(help_nmap)
+		if k == "http":
+			system("""nmap --script "http*" -p 80 """+target)
 def console():
 	x = ""
 	rpr = ""
