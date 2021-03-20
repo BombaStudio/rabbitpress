@@ -14,4 +14,8 @@ Wordpress is an open source website building tool. Anyone can develop the php pr
 Because this tool using easy. So they prefer using Wordpress but they don't know what vulnerabilities are there on the website. We want they find vulnerabilities before attackers are attacking.
 
 ## How to find vulnerabilities on Wordpress websites?
-Although there are various tools for this, this tool is more comprehensive than others. This tool scan port with nmap, dork, url and find subdomains amass. Also this tool directs you to the link about vulnerabilities when find any vulnerabilities. So Users learn how to safe this vulnerabilities. Also this tool using easy. Tool's commands are simple and they can write help command if you want learn codes.
+Although there are various tools for this, this tool is more comprehensive than others. This tool scan port with nmap, dork, url and find subdomains amass.This tool scan vulnerabilities like wordpress,sql injection, xss with tool's modules and nmap scripts. Also this tool directs you to the link about vulnerabilities when find any vulnerabilities. So Users learn how to safe this vulnerabilities. Also this tool using easy. Tool's commands are simple and they can write help command if you want learn codes.
+
+[XSS](https://www.google.com)
+[SQL Injection](https://www.google.com)
+[Wordpress](https://www.google.com)
