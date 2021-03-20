@@ -19,5 +19,7 @@ Although there are various tools for this, this tool is more comprehensive than 
 
 ## Learn how to safe vulnerabilities
 [XSS](https://www.google.com)
+<br/>
 [SQL Injection](https://www.google.com)
-[Wordpress](https://www.google.com)
+<br/>
+[Wordpress Files](https://www.google.com)
